@@ -13,15 +13,13 @@ interface HomePageProps {
   leetcodeHandle: string;
   githubHandle: string;
   githubStats: GitHubStats;
-  onTechnicalProjectsClick: () => void;
 }
 
 const HomePage: React.FC<HomePageProps> = ({
   codeforcesHandle,
   leetcodeHandle,
   githubHandle,
-  githubStats,
-  onTechnicalProjectsClick
+  githubStats
 }) => {
   return (
     <>
@@ -32,7 +30,7 @@ const HomePage: React.FC<HomePageProps> = ({
         githubHandle={githubHandle}
         githubStats={githubStats}
       />
-      <ProjectsSection onTechnicalProjectsClick={onTechnicalProjectsClick} />
+      <ProjectsSection />
       <PORSection />
       <AboutSection />
       <ContactSection />

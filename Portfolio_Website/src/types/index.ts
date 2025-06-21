@@ -30,8 +30,24 @@ export interface TechnicalProject {
   id: number;
   title: string;
   description: string;
-  image: string;
   technologies: string[];
+  tabs: ProjectTab[];
+}
+
+export interface CoreProject {
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  tabs: ProjectTab[];
+}
+
+export interface ManagementProject {
+  id: number;
+  title: string;
+  description: string;
+  scope: string[];
+  impact: string;
   tabs: ProjectTab[];
 }
 

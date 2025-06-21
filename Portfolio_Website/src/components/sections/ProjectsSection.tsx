@@ -1,31 +1,44 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Code, Briefcase, Users } from 'lucide-react';
 import { ProjectCategory } from '../../types';
 
-interface ProjectsSectionProps {
-  onTechnicalProjectsClick: () => void;
-}
+const ProjectsSection: React.FC = () => {
+  const navigate = useNavigate();
 
-const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onTechnicalProjectsClick }) => {
+  const handleTechnicalProjectsClick = () => {
+    navigate('/technical-projects');
+  };
+
+  const handleCoreProjectsClick = () => {
+    navigate('/core-projects');
+  };
+
+  const handleManagementProjectsClick = () => {
+    navigate('/management-projects');
+  };
+
   const projectCategories: ProjectCategory[] = [
     {
       title: 'Technical Projects',
       icon: Code,
       color: 'from-blue-600 to-indigo-700',
       description: 'Full-stack applications and software solutions',
-      onClick: onTechnicalProjectsClick
+      onClick: handleTechnicalProjectsClick
     },
     {
       title: 'Core Projects',
       icon: Briefcase,
       color: 'from-emerald-600 to-teal-700',
-      description: 'System design and algorithmic implementations'
+      description: 'System design and algorithmic implementations',
+      onClick: handleCoreProjectsClick
     },
     {
       title: 'Management Projects',
       icon: Users,
       color: 'from-purple-600 to-violet-700',
-      description: 'Leadership and organizational initiatives'
+      description: 'Leadership and organizational initiatives',
+      onClick: handleManagementProjectsClick
     }
   ];
 
