@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ githubHandle }) => {
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4">Aditya Satpute</h3>
           <p className="text-gray-400 mb-6">
-            Full Stack Developer & DSA Enthusiast
+            Code. Debug. Optimize. Repeat with curiosity and purpose :
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a

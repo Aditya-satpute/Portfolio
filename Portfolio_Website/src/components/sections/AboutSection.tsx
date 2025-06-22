@@ -6,7 +6,7 @@ const AboutSection: React.FC = () => {
   const [isSkillsModalOpen, setIsSkillsModalOpen] = useState(false);
 
   const topSkills = [
-    'JavaScript', 'React', 'Node.js', 'Python', 'MongoDB'
+    'C++','React', 'Django', 'Python','JavaScript'
   ];
 
   return (
@@ -25,14 +25,10 @@ const AboutSection: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Professional Summary</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                  Experienced software developer with a strong foundation in full-stack development 
-                  and system design. Passionate about creating efficient, scalable solutions that 
-                  solve real-world problems.
+                  I’m a passionate coder with a strong grip on Data Structures and Algorithms, enjoying the challenge of solving complex problems efficiently. DSA is my favorite area in tech, and I regularly sharpen my skills through coding platforms and contests.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Committed to continuous learning and staying current with emerging technologies. 
-                  Strong background in competitive programming with proven problem-solving abilities 
-                  and algorithmic thinking.
+                 Alongside coding, I’m deeply interested in design, development, and team management. I’ve led multiple projects and events, blending creativity with coordination to deliver impactful digital products and organized team efforts.
                 </p>
               </div>
               <div>
