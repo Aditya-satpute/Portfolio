@@ -1,4 +1,4 @@
-import { Code, Eye, FileText, Database, Settings, Users, Target, BarChart3, Award, Brain, CircuitBoard } from 'lucide-react';
+import { Code, Eye, FileText, Database, Settings, Users, Target, BarChart3, Award, Brain, CircuitBoard, BookOpen, Monitor, AppWindow, Smartphone } from 'lucide-react';
 import { TechnicalProject, CoreProject, ManagementProject } from '../types';
 
 export const technicalProjects: TechnicalProject[] = [
@@ -76,26 +76,26 @@ export const coreProjects: CoreProject[] = [
 export const managementProjects: ManagementProject[] = [
   {
     id: 1,
-    title: 'Annual Tech Conference Organization',
-    description: 'Led the organization of a 3-day technical conference with 500+ attendees, 20+ speakers, and 15+ sponsors. Managed budget allocation, vendor coordination, speaker management, and logistics. Implemented digital registration system and mobile app for attendees with real-time updates.',
-    scope: ['Event Planning', 'Budget Management', 'Vendor Coordination', 'Team Leadership'],
-    impact: '500+ Attendees, $50K Budget, 95% Satisfaction Rate',
+    title: 'Experience Optimization of OneIITP – The Campus App of IIT Patna',
+    description: 'Redesigned and reimagined OneIITP by identifying UX flaws, proposing innovative solutions, and creating an implementation roadmap to boost student engagement and operational efficiency.',
+    scope: ['ProductStrategy', 'PrioritizationFrameworks', 'KPITracking', 'UserResearch','UXAudit','Wireframing'],
+    impact: '30–50% expected rise in engagement, Faster issue resolution & better navigation, Personalized student experience',
     tabs: [
-      { label: 'Event Report', icon: FileText, link: '/docs/tech-conference-report.pdf' },
-      { label: 'Photo Gallery', icon: Eye, link: 'https://photos.google.com/conference-2023' },
-      { label: 'Feedback Analysis', icon: BarChart3, link: '/docs/conference-feedback.pdf' }
+      { label: 'PRD Doc.', icon: FileText, link: 'https://www.notion.so/Product-Requirements-Document-OneIITP-App-1c6d038f707b80a79f31f2bee977097c?source=copy_link' },
+      { label: 'PPT', icon: Monitor, link: 'https://drive.google.com/file/d/1nPqv82BQO2OH_HTEy27TgbDca_jwAz6R/view?usp=sharing' },
+      { label: 'Application', icon: Smartphone, link: 'https://play.google.com/store/apps/details?id=com.oneiitp.app' }
     ]
   },
   {
     id: 2,
-    title: 'Student Mentorship Program',
-    description: 'Designed and implemented a comprehensive mentorship program connecting senior students with juniors. Established structured curriculum, progress tracking system, and regular evaluation metrics. Successfully mentored 50+ students with 90% program completion rate and significant improvement in academic performance.',
-    scope: ['Program Design', 'Curriculum Development', 'Progress Tracking', 'Performance Analysis'],
-    impact: '50+ Students Mentored, 90% Completion Rate, 25% Grade Improvement',
+    title: 'Instacart Checkout Optimization',
+    description: 'Redesigned Instacart’s first-time checkout flow to reduce cart abandonment by solving UX and technical bottlenecks.Backed by research, A/B testing, and competitor analysis to deliver a faster, simpler user experience. Secured 1st Rank for this case study.',
+    scope: ['UserResearch', 'TechnicalAnalysis', 'A/BTesting', 'CheckoutFlow','ConversionOptimization','CompetitiveBenchmarking','UXDesign'],
+    impact: 'Reduced checkout friction, Increased conversion rates, Improved first-time user experience',
     tabs: [
-      { label: 'Program Guide', icon: FileText, link: '/docs/mentorship-program-guide.pdf' },
-      { label: 'Success Stories', icon: Award, link: '/docs/mentorship-success-stories.pdf' },
-      { label: 'Impact Analysis', icon: Target, link: '/docs/mentorship-impact-report.pdf' }
+      { label: 'Case Study PDF', icon: BookOpen, link: 'https://drive.google.com/file/d/1cxtSVxBGn7zaOBpgW-6Jts8b9c69rvXV/view?usp=sharing' },
+      // { label: 'Success Stories', icon: Award, link: '/docs/mentorship-success-stories.pdf' },
+      // { label: 'Impact Analysis', icon: Target, link: '/docs/mentorship-impact-report.pdf' }
     ]
   }
 ];
