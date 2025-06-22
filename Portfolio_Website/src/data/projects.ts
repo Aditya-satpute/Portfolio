@@ -1,4 +1,4 @@
-import { Code, Eye, FileText, Database, Settings, Users, Target, BarChart3, Award } from 'lucide-react';
+import { Code, Eye, FileText, Database, Settings, Users, Target, BarChart3, Award, Brain, CircuitBoard } from 'lucide-react';
 import { TechnicalProject, CoreProject, ManagementProject } from '../types';
 
 export const technicalProjects: TechnicalProject[] = [
@@ -51,26 +51,26 @@ export const technicalProjects: TechnicalProject[] = [
 export const coreProjects: CoreProject[] = [
   {
     id: 1,
-    title: 'Distributed Database System',
-    description: 'Implementation of a distributed database system with ACID properties, replication, and fault tolerance. Built from scratch using C++ with custom consensus algorithms for data consistency across multiple nodes. Supports SQL-like query processing and transaction management.',
-    technologies: ['C++', 'Networking', 'Consensus Algorithms', 'SQL Parser', 'Multi-threading'],
+    title: 'Hardy Cross Network',
+    description: 'A web-based tool to simulate fluid flow in pipe networks using the Hardy Cross method. Users input pipe resistances, initial discharge guesses, loop weights, and iterations. The backend calculates balanced discharges, and the React frontend displays results in an intuitive format, ideal for engineering applications.',
+    technologies: ['Python', 'React.js', 'Typescript', 'Tailwind CSS', 'Vite'],
     tabs: [
-      { label: 'Source Code', icon: Code, link: 'https://github.com/your_handle/distributed-db' },
-      { label: 'Architecture', icon: Database, link: '/docs/distributed-db-architecture.pdf' },
-      { label: 'Performance Report', icon: BarChart3, link: '/docs/db-performance-analysis.pdf' }
+      { label: 'Logic', icon: CircuitBoard, link: 'https://github.com/Aditya-satpute/Hardy_Cross/blob/main/Python%20Code/Hardy%20Cross%20Pipeline%20network.py' },
+      { label: 'Source Code', icon: Code, link: 'https://github.com/Aditya-satpute/Hardy_Cross' }
+      // { label: 'Performance Report', icon: BarChart3, link: '/docs/db-performance-analysis.pdf' }
     ]
   },
-  {
-    id: 2,
-    title: 'Custom Operating System Kernel',
-    description: 'A minimal operating system kernel developed in C and Assembly language. Features include process scheduling, memory management, file system implementation, and device drivers. Supports multitasking, inter-process communication, and system calls with a custom bootloader.',
-    technologies: ['C', 'Assembly', 'x86 Architecture', 'Memory Management', 'File Systems'],
-    tabs: [
-      { label: 'Source Code', icon: Code, link: 'https://github.com/your_handle/custom-os' },
-      { label: 'System Design', icon: Settings, link: '/docs/os-system-design.pdf' },
-      { label: 'Demo Video', icon: Eye, link: 'https://youtube.com/watch?v=os-demo' }
-    ]
-  }
+  // {
+  //   id: 2,
+  //   title: 'Custom Operating System Kernel',
+  //   description: 'A minimal operating system kernel developed in C and Assembly language. Features include process scheduling, memory management, file system implementation, and device drivers. Supports multitasking, inter-process communication, and system calls with a custom bootloader.',
+  //   technologies: ['C', 'Assembly', 'x86 Architecture', 'Memory Management', 'File Systems'],
+  //   tabs: [
+  //     { label: 'Source Code', icon: Code, link: 'https://github.com/your_handle/custom-os' },
+  //     { label: 'System Design', icon: Settings, link: '/docs/os-system-design.pdf' },
+  //     { label: 'Demo Video', icon: Eye, link: 'https://youtube.com/watch?v=os-demo' }
+  //   ]
+  // }
 ];
 
 export const managementProjects: ManagementProject[] = [
@@ -101,12 +101,10 @@ export const managementProjects: ManagementProject[] = [
 ];
 
 export const porList = [
-  'Technical Lead, University Tech Club',
-  'Event Coordinator, Annual Tech Fest 2023',
-  'Mentor, Coding Bootcamp Program',
-  'Organizer, XYZ Fest',
-  'Founder, XYZ Company',
-  'Vice President, Computer Science Society',
-  'Team Captain, Programming Contest Team',
-  'Workshop Coordinator, Developer Meetups'
+  'Founder & Organizer, Project Seva, IIT Patna',
+  'Overall Co-ordinator, Marketing & Sponsorship, Anwesha, Cultural Fest of IIT Patna',
+  'Overall Co-ordinator, Guest Lecture & Exhibition, Celesta, Techfest of IIT Patna',
+  'Executive, E-Cell, IIT Patna',
+  'Mentor, National Service Scheme (NSS), IIT Patna',
+  'Mentor, Student Mentorhsip Program, IIT Patna'
 ];
