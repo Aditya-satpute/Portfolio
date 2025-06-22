@@ -2,7 +2,7 @@ import { Code, Eye, FileText, Database, Settings, Users, Target, BarChart3, Awar
 import { TechnicalProject, CoreProject, ManagementProject } from '../types';
 
 export const technicalProjects: TechnicalProject[] = [
-  {
+  /*{
     id: 1,
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. Implemented responsive design and optimized for performance.',
@@ -45,7 +45,7 @@ export const technicalProjects: TechnicalProject[] = [
       { label: 'Demo Video', icon: Eye, link: 'https://youtube.com/watch?v=demo-video' },
       { label: 'Research Paper', icon: FileText, link: '/docs/social-analytics-research.pdf' }
     ]
-  }
+  }*/
 ];
 
 export const coreProjects: CoreProject[] = [

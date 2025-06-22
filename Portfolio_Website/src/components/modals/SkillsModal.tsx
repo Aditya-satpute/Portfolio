@@ -16,8 +16,8 @@ const SkillsModal: React.FC<SkillsModalProps> = ({ isOpen, onClose }) => {
       title: 'Frontend Development',
       icon: Code,
       skills: [
-        'React', 'TypeScript', 'JavaScript', 'Vue.js', 'Angular',
-        'HTML5', 'CSS3', 'Tailwind CSS', 'SASS/SCSS', 'Material-UI',
+        'React', 'TypeScript', 'JavaScript',
+        'HTML5', 'CSS3', 'Tailwind CSS',
         'Bootstrap', 'Responsive Design', 'Progressive Web Apps'
       ]
     },
@@ -25,36 +25,36 @@ const SkillsModal: React.FC<SkillsModalProps> = ({ isOpen, onClose }) => {
       title: 'Backend Development',
       icon: Database,
       skills: [
-        'Node.js', 'Python', 'Java', 'C++', 'Express.js',
-        'Django', 'Flask', 'Spring Boot', 'RESTful APIs', 'GraphQL',
-        'Microservices', 'WebSocket', 'Authentication & Authorization'
+        'Python',
+        'Django','REST APIs',
+        'Authentication', 'Authorization'
       ]
     },
-    database: {
-      title: 'Database & Storage',
-      icon: Database,
-      skills: [
-        'MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase',
-        'SQLite', 'Database Design', 'Query Optimization', 'Data Modeling',
-        'NoSQL', 'ACID Properties', 'Indexing'
-      ]
-    },
-    cloud: {
-      title: 'Cloud & DevOps',
-      icon: Cloud,
-      skills: [
-        'AWS', 'Google Cloud', 'Docker', 'Kubernetes', 'CI/CD',
-        'Jenkins', 'GitHub Actions', 'Terraform', 'Linux', 'Nginx',
-        'Load Balancing', 'Monitoring', 'Logging'
-      ]
-    },
+    // database: {
+    //   title: 'Database & Storage',
+    //   icon: Database,
+    //   skills: [
+    //     'MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase',
+    //     'SQLite', 'Database Design', 'Query Optimization', 'Data Modeling',
+    //     'NoSQL', 'ACID Properties', 'Indexing'
+    //   ]
+    // },
+    // cloud: {
+    //   title: 'Cloud & DevOps',
+    //   icon: Cloud,
+    //   skills: [
+    //     'AWS', 'Google Cloud', 'Docker', 'Kubernetes', 'CI/CD',
+    //     'Jenkins', 'GitHub Actions', 'Terraform', 'Linux', 'Nginx',
+    //     'Load Balancing', 'Monitoring', 'Logging'
+    //   ]
+    // },
     tools: {
       title: 'Tools & Technologies',
       icon: Wrench,
       skills: [
-        'Git', 'GitHub', 'VS Code', 'Postman', 'Figma',
-        'Webpack', 'Vite', 'ESLint', 'Prettier', 'Jest',
-        'Testing Library', 'Cypress', 'Agile/Scrum'
+        'Git', 'GitHub', 'VS Code','Figma',
+        'Vite','Notion','Google Sheets + Apps Script'
+        
       ]
     },
     soft: {
