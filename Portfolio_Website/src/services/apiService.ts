@@ -19,19 +19,6 @@ export interface CodeforcesRating {
 
 export interface LeetCodeStats {
   totalSolved: number;
-  totalQuestions: number;
-  easySolved: number;
-  mediumSolved: number;
-  hardSolved: number;
-  acceptanceRate: number;
-  ranking: number;
-}
-
-export interface CodingProfile {
-  platform: string;
-  handle: string;
-  data: any;
-  error?: string;
 }
 
 // Codeforces API functions
@@ -65,66 +52,24 @@ export const fetchCodeforcesRating = async (handle: string): Promise<CodeforcesR
   }
 };
 
-// LeetCode API function
+// LeetCode API function using a public API
 export const fetchLeetCodeStats = async (username: string): Promise<LeetCodeStats | null> => {
   try {
-    const query = `
-      query getUserProfile($username: String!) {
-        allQuestionsCount {
-          difficulty
-          count
-        }
-        matchedUser(username: $username) {
-          username
-          submitStats: submitStatsGlobal {
-            acSubmissionNum {
-              difficulty
-              count
-              submissions
-            }
-          }
-          profile {
-            ranking
-          }
-        }
-      }
-    `;
-
-    const response = await fetch('/api/leetcode', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query,
-        variables: { username }
-      })
-    });
-
+    // Using a public LeetCode stats API
+    const response = await fetch(`https://leetcode-stats-api.herokuapp.com/${username}`);
+    
+    if (!response.ok) {
+      throw new Error('Failed to fetch LeetCode data');
+    }
+    
     const data = await response.json();
     
-    if (data.data && data.data.matchedUser) {
-      const user = data.data.matchedUser;
-      const allQuestions = data.data.allQuestionsCount;
-      const acStats = user.submitStats.acSubmissionNum;
-      
-      const totalQuestions = allQuestions.reduce((sum: number, item: any) => sum + item.count, 0);
-      const totalSolved = acStats.reduce((sum: number, item: any) => sum + item.count, 0);
-      
-      const easySolved = acStats.find((item: any) => item.difficulty === 'Easy')?.count || 0;
-      const mediumSolved = acStats.find((item: any) => item.difficulty === 'Medium')?.count || 0;
-      const hardSolved = acStats.find((item: any) => item.difficulty === 'Hard')?.count || 0;
-      
+    if (data.status === 'success' && data.totalSolved !== undefined) {
       return {
-        totalSolved,
-        totalQuestions,
-        easySolved,
-        mediumSolved,
-        hardSolved,
-        acceptanceRate: totalQuestions > 0 ? Math.round((totalSolved / totalQuestions) * 100) : 0,
-        ranking: user.profile?.ranking || 0
+        totalSolved: data.totalSolved
       };
     }
+    
     return null;
   } catch (error) {
     console.error('Error fetching LeetCode data:', error);
@@ -132,7 +77,7 @@ export const fetchLeetCodeStats = async (username: string): Promise<LeetCodeStat
   }
 };
 
-// Combined function to fetch all profile data
+// Combined function to fetch profile data
 export const fetchAllProfiles = async (codeforcesHandle: string, leetcodeHandle: string) => {
   const [codeforcesUser, codeforcesRating, leetcodeStats] = await Promise.all([
     fetchCodeforcesUser(codeforcesHandle),

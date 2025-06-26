@@ -17,12 +17,12 @@ function App() {
   // Configuration - easily editable
   const CODEFORCES_HANDLE = 'adityasatpute402';
   const LEETCODE_HANDLE = 'Aditya_Satpute';
-  const GITHUB_HANDLE = 'your_handle';
+  const GITHUB_HANDLE = 'Aditya-satpute';
 
   const githubStats: GitHubStats = {
-    repos: '42',
-    followers: '120',
-    stars: '250'
+    repos: '11',
+    followers: '0',
+    stars: '0'
   };
 
   const handleScrollToSection = (sectionId: string) => {
