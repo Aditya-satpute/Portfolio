@@ -22,7 +22,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-gray-600 dark:text-gray-400">aditya_2301me04@iitp.ac.in</p>
+                  <p className="text-gray-600 dark:text-gray-400">adityasatpute402@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">

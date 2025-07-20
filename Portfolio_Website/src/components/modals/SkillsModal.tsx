@@ -17,17 +17,16 @@ const SkillsModal: React.FC<SkillsModalProps> = ({ isOpen, onClose }) => {
       icon: Code,
       skills: [
         'React', 'TypeScript', 'JavaScript',
-        'HTML5', 'CSS3', 'Tailwind CSS',
-        'Bootstrap', 'Responsive Design', 'Progressive Web Apps'
+        'HTML', 'CSS', 'Tailwind CSS',
+        'Responsive Design'
       ]
     },
     backend: {
       title: 'Backend Development',
       icon: Database,
       skills: [
-        'Python',
-        'Django','REST APIs',
-        'Authentication', 'Authorization'
+        'REST APIs',
+        'Authentication', 'Node.js', 'Express.js'
       ]
     },
     // database: {

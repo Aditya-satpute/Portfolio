@@ -2,18 +2,18 @@ import { Code, Eye, FileText, Database, Settings, Users, Target, BarChart3, Awar
 import { TechnicalProject, CoreProject, ManagementProject } from '../types';
 
 export const technicalProjects: TechnicalProject[] = [
-  /*{
+  {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, payment integration, and admin dashboard. Implemented responsive design and optimized for performance.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe API'],
+    title: 'Opplify',
+    description: 'Opplify is a collaborative platform where developers can showcase their projects, discover work by others, and connect over shared interests. It allows users to upload projects, filter by tech stack or domain, and explore real-world work from peers making it easier to learn, collaborate, and grow together.',
+    technologies: ['React', 'Vite', 'Axios', 'Tailwind CSS', 'Node.js', 'MongoDB', 'Express'],
     tabs: [
-      { label: 'Source Code', icon: Code, link: 'https://github.com/your_handle/ecommerce-platform' },
-      { label: 'Live Preview', icon: Eye, link: 'https://your-ecommerce-demo.com' },
-      { label: 'Documentation', icon: FileText, link: '/docs/ecommerce-platform.pdf' }
+      { label: 'Source Code', icon: Code, link: 'https://github.com/Aditya-satpute/Opplify' },
+      // { label: 'Live Preview', icon: Eye, link: 'https://your-ecommerce-demo.com' },
+      // { label: 'Documentation', icon: FileText, link: '/docs/ecommerce-platform.pdf' }
     ]
   },
-  {
+  /*{
     id: 2,
     title: 'Task Management System',
     description: 'A collaborative task management application with real-time updates, team collaboration features, and project tracking. Built using React, Firebase, and Material-UI. Includes drag-and-drop functionality, notifications, and analytics dashboard.',
